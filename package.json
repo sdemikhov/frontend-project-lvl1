@@ -1,6 +1,6 @@
 {
   "name": "@hexlet/code",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Collection of math mini-gamges.",
   "bin": {
     "brain-games": "bin/brain-games.js"
@@ -18,5 +18,10 @@
   "homepage": "https://github.com/sdemikhov/frontend-project-lvl1#readme",
   "dependencies": {
     "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "eslint": "^7.18.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1"
   }
 }
