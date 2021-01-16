@@ -1,13 +1,9 @@
 {
   "name": "@hexlet/code",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Collection of math mini-gamges.",
-  "main": "index.js",
   "bin": {
-    "code": "brain-games.js"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "brain-games": "bin/brain-games.js"
   },
   "repository": {
     "type": "git",
@@ -15,6 +11,7 @@
   },
   "author": "Sergey Demikhov",
   "license": "ISC",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/sdemikhov/frontend-project-lvl1/issues"
   },
