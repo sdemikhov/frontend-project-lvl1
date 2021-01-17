@@ -3,4 +3,4 @@
 import runGame from '../src/index.js';
 import buildGame from '../src/games/even.js';
 
-runGame(buildGame);
+runGame(buildGame());

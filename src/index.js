@@ -2,9 +2,9 @@ import { getUsername, sendQuestion } from './cli.js';
 
 const maxWins = 3;
 
-export default (buildGame) => {
+export default (game) => {
   const username = getUsername();
-  const [description, generateQuestion] = buildGame();
+  const [description, generateQuestion] = game;
   console.log(description);
   let currentWins = 0;
   while (currentWins < maxWins) {
