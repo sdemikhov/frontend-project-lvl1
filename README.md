@@ -10,7 +10,7 @@ make install
 npm link</pre>
 <h2>Usage:</h2>
 <p>To run games use following commands:<ul><li>brain-even</li><li>brain-calc</li><li>brain-gcd</li><li>brain-progression</li><li>brain-prime</li></ul></p>
-<h2>Demo:</h2>
+
 ### Brain-even
 [![asciicast](https://asciinema.org/a/8y8ZBvrN7e2CtLSeuOJ61CWEp.svg)](https://asciinema.org/a/8y8ZBvrN7e2CtLSeuOJ61CWEp)
 ### Brain-calc
