@@ -1,10 +1,11 @@
 {
   "name": "@hexlet/code",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Collection of math mini-gamges.",
   "bin": {
     "brain-games": "bin/brain-games.js",
-    "brain-even": "bin/brain-even.js"
+    "brain-even": "bin/brain-even.js",
+    "brain-calc": "bin/brain-calc.js"
   },
   "repository": {
     "type": "git",

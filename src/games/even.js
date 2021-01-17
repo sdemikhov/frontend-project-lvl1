@@ -1,6 +1,6 @@
 import _ from 'lodash';
 
-const buildGameEven = () => ([
+export default () => ([
   'Answer "yes" if the number is even, otherwise answer "no".',
   () => {
     const number = _.random(100);
@@ -8,5 +8,3 @@ const buildGameEven = () => ([
     return [number, answer];
   },
 ]);
-
-export default buildGameEven;
