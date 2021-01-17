@@ -15,7 +15,7 @@ export default (game) => {
       currentWins += 1;
     } else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'.\nLet's try again, ${username}!`);
-      currentWins = 0;
+      return;
     }
   }
   console.log(`Congratulations, ${username}!`);

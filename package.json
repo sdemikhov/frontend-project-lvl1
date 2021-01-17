@@ -1,6 +1,6 @@
 {
   "name": "@hexlet/code",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "description": "Collection of math mini-gamges.",
   "bin": {
     "brain-games": "bin/brain-games.js",
