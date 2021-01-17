@@ -6,7 +6,7 @@ export default () => ([
     const start = _.random(100);
     const step = _.random(1, 10);
     const progressionLength = _.random(5, 10);
-    const missingMemberIndex = _.random(0, progressionLength);
+    const missingMemberIndex = _.random(0, progressionLength - 1);
 
     const progression = [];
     for (let i = 0; i < progressionLength; i += 1) {
