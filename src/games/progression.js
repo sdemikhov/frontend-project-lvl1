@@ -1,8 +1,8 @@
 import _ from 'lodash';
 
-export default () => ([
-  'What number is missing in the progression?',
-  () => {
+export default () => ({
+  description: 'What number is missing in the progression?',
+  generateQuiz: () => {
     const start = _.random(100);
     const step = _.random(1, 10);
     const progressionLength = _.random(5, 10);
@@ -17,6 +17,6 @@ export default () => ([
     const answer = String(progression[missingMemberIndex]);
     progression[missingMemberIndex] = '..';
 
-    return [progression.join(' '), answer];
+    return { question: progression.join(' '), answer };
   },
-]);
+});

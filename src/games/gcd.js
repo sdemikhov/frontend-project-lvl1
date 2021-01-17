@@ -12,15 +12,15 @@ const gcd = (number1, number2) => {
   return smaller;
 };
 
-export default () => ([
-  'Find the greatest common divisor of given numbers.',
-  () => {
+export default () => ({
+  description: 'Find the greatest common divisor of given numbers.',
+  generateQuiz: () => {
     const operand1 = _.random(100);
     const operand2 = _.random(100);
 
-    const numbers = `${operand1} ${operand2}`;
-    const result = String(gcd(operand1, operand2));
+    const question = `${operand1} ${operand2}`;
+    const answer = String(gcd(operand1, operand2));
 
-    return [numbers, result];
+    return { question, answer };
   },
-]);
+});

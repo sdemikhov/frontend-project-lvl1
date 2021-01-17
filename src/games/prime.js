@@ -9,12 +9,12 @@ const isPrime = (number) => {
   return number > 1;
 };
 
-export default () => ([
-  'Answer "yes" if given number is prime. Otherwise answer "no".',
-  () => {
-    const number = _.random(100);
-    const answer = isPrime(number) ? 'yes' : 'no';
+export default () => ({
+  description: 'Answer "yes" if given number is prime. Otherwise answer "no".',
+  generateQuiz: () => {
+    const question = _.random(100);
+    const answer = isPrime(question) ? 'yes' : 'no';
 
-    return [number, answer];
+    return { question, answer };
   },
-]);
+});
