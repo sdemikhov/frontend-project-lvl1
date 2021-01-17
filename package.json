@@ -1,9 +1,10 @@
 {
   "name": "@hexlet/code",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Collection of math mini-gamges.",
   "bin": {
-    "brain-games": "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/sdemikhov/frontend-project-lvl1#readme",
   "dependencies": {
+    "lodash": "^4.17.20",
     "readline-sync": "^1.4.10"
   },
   "devDependencies": {
