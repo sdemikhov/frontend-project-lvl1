@@ -5,8 +5,8 @@ export default () => ([
   () => {
     const start = _.random(100);
     const step = _.random(1, 10);
-    const progressionLength = 10;
-    const missingMemberIndex = _.random(9);
+    const progressionLength = _.random(5, 10);
+    const missingMemberIndex = _.random(0, progressionLength);
 
     const progression = [];
     for (let i = 0; i < progressionLength; i += 1) {
@@ -17,7 +17,6 @@ export default () => ([
     const answer = String(progression[missingMemberIndex]);
     progression[missingMemberIndex] = '..';
 
-    const expression = progression.join(' ');
-    return [expression, answer];
+    return [progression.join(' '), answer];
   },
 ]);
