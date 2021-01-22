@@ -1,19 +1,25 @@
 import _ from 'lodash';
 
 const isPrime = (number) => {
-  for (let i = 2, s = Math.sqrt(number); i <= s; i += 1) {
-    if (number % i === 0) {
-      return false;
+  if (number <= 1) {
+    return false;
+  }
+  if (number >= 4) {
+    for (let i = 2; i <= number; i += 1) {
+      if (number % 2 === 0) {
+        return false;
+      }
     }
   }
-  return number > 1;
+  return true;
 };
 
 export default () => ({
   description: 'Answer "yes" if given number is prime. Otherwise answer "no".',
   generateQuiz: () => {
-    const question = _.random(100);
-    const answer = isPrime(question) ? 'yes' : 'no';
+    const maxValue = 100;
+    const question = _.random(maxValue);
+    const answer = String(isPrime(question) ? 'yes' : 'no');
 
     return { question, answer };
   },

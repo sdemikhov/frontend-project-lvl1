@@ -15,8 +15,9 @@ const gcd = (number1, number2) => {
 export default () => ({
   description: 'Find the greatest common divisor of given numbers.',
   generateQuiz: () => {
-    const operand1 = _.random(100);
-    const operand2 = _.random(100);
+    const maxValue = 100;
+    const operand1 = _.random(maxValue);
+    const operand2 = _.random(maxValue);
 
     const question = `${operand1} ${operand2}`;
     const answer = String(gcd(operand1, operand2));

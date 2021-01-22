@@ -3,10 +3,17 @@ import _ from 'lodash';
 export default () => ({
   description: 'What number is missing in the progression?',
   generateQuiz: () => {
-    const start = _.random(100);
-    const step = _.random(1, 10);
-    const progressionLength = _.random(5, 10);
-    const missingMemberIndex = _.random(0, progressionLength - 1);
+    const maxRandomValue = 100;
+    const minStep = 1;
+    const maxStep = 10;
+    const minProgressionLength = 5;
+    const maxProgressionLength = 10;
+    const minIndex = 0;
+
+    const start = _.random(maxRandomValue);
+    const step = _.random(minStep, maxStep);
+    const progressionLength = _.random(minProgressionLength, maxProgressionLength);
+    const missingMemberIndex = _.random(minIndex, progressionLength - 1);
 
     const progression = [];
     for (let i = 0; i < progressionLength; i += 1) {
